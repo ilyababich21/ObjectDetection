@@ -40,9 +40,9 @@ class Detector():
 
         # face recognition
         # resultObject = self.modelObject.predict(frame, conf=self.weapon_conf, iou=self.weapon_iou, imgsz=640)[0]
-        resultObject = self.modelObject.predict(frame)[0]
+        resultObject = self.modelObject.predict(frame,verbose=False)[0]
         # resultObject = self.modelObject.predict(frame, conf=self.weapon_conf, iou=self.weapon_iou)[0]
-        resultPOse = self.modelPose(frame, conf=self.pose_conf)[0]
+        resultPOse = self.modelPose(frame, conf=self.pose_conf,verbose=False)[0]
 
         class_name = self.findClassNames(resultObject)
         class_name2 = self.findClassNames(resultPOse)

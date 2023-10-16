@@ -33,7 +33,7 @@
    <string>Output Window</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resource.qrc">
+   <iconset>
     <normaloff>:/icon/icon.png</normaloff>:/icon/icon.png</iconset>
   </property>
   <property name="autoFillBackground">
@@ -67,8 +67,8 @@
   <widget class="QPushButton" name="playButton">
    <property name="geometry">
     <rect>
-     <x>130</x>
-     <y>750</y>
+     <x>50</x>
+     <y>760</y>
      <width>201</width>
      <height>61</height>
     </rect>
@@ -175,6 +175,9 @@
     </item>
     <item row="7" column="1">
      <widget class="QSlider" name="poseConfSlider">
+      <property name="value">
+       <number>50</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -182,6 +185,9 @@
     </item>
     <item row="4" column="1">
      <widget class="QSlider" name="weaponIOUSlider">
+      <property name="value">
+       <number>50</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -189,6 +195,9 @@
     </item>
     <item row="1" column="1">
      <widget class="QSlider" name="weaponConfSlider">
+      <property name="value">
+       <number>30</number>
+      </property>
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
       </property>
@@ -254,8 +263,8 @@
   <widget class="QRadioButton" name="useWebCum">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>670</y>
+     <x>50</x>
+     <y>680</y>
      <width>101</width>
      <height>31</height>
     </rect>
@@ -272,8 +281,8 @@
   <widget class="QPushButton" name="ChooseButton">
    <property name="geometry">
     <rect>
-     <x>250</x>
-     <y>670</y>
+     <x>180</x>
+     <y>680</y>
      <width>181</width>
      <height>31</height>
     </rect>
@@ -290,8 +299,8 @@
   <widget class="QLabel" name="currentVideo">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>710</y>
+     <x>50</x>
+     <y>720</y>
      <width>411</width>
      <height>16</height>
     </rect>
@@ -300,9 +309,22 @@
     <string/>
    </property>
   </widget>
+  <widget class="QSlider" name="slider">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>640</y>
+     <width>891</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="Face_Detection_PyQt_base/resource.qrc"/>
  </resources>
  <connections>
   <connection>
